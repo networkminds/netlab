@@ -31,6 +31,14 @@ $ netlab install ubuntu
 $ netlab install containerlab
 $ netlab install ansible
 ```
-### 5. Run "Cisco IOL" image for labs:
+### 6. Run "Cisco IOL" image for labs:
 How to run cisco IOL image see video "Containerlab": 
 https://www.youtube.com/watch?v=N9bRblKFLNA&t=3907s 
+
+### 7. Create topology files and run topology
+```bash
+$ vim topology.yml
+$ netlab up
+$ netlab status
+$ netlab connect r1
+```
