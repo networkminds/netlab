@@ -1,0 +1,19 @@
+provider: clab
+defaults.device: iol
+defaults.devices.eos.clab.image: ceos:4.34.2
+defaults.devices.iol.clab.image: vrnetlab/cisco_iol:17.12.01
+
+module: [ospf]
+nodes: 
+  - name: r1
+    device: eos
+
+  - name: r2
+  - name: r3
+  - name: r4
+
+links:
+  - r1
+  - r1-r2
+  - r2-r3
+  - r3-r4
