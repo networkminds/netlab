@@ -1,0 +1,31 @@
+provider: clab
+defaults.device: iol
+defaults.devices.iol.clab.image: vrnetlab/cisco_iol:17.12.01
+
+addressing:
+  mgmt:
+    ipv4: 192.168.200.0/24
+  p2p:
+    ipv4: 155.11.1.0/24
+    prefix: 31
+
+nodes: 
+  - name: r1
+    loopback:
+      ipv4: 1.1.1.1/32
+  - name: r2
+    loopback:
+      ipv4: 2.2.2.2/32
+  - name: r3
+    loopback:
+      ipv4: 3.3.3.3/32
+  - name: r4
+    loopback:
+      ipv4: 4.4.4.4/32
+
+module: [ospf]
+links:
+  - r1
+  - r1-r2
+  - r2-r3
+  - r3-r4
