@@ -45,3 +45,5 @@ $ netlab up
 $ netlab status
 $ netlab connect r1
 ```
+<img width="1090" height="279" alt="image" src="https://github.com/user-attachments/assets/6dc46e59-9a06-4b49-885a-5c3a6ee3ef26" />
+
