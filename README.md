@@ -24,3 +24,10 @@ $ netlab version
 $ netlab install
 ```
 <img width="639" height="203" alt="image" src="https://github.com/user-attachments/assets/5cb8b9bb-765e-46c4-a5a6-65b5da86755b" />
+
+According to the list, we need to install following softwares:
+```bash
+$ netlab install ubuntu
+$ netlab install containerlab
+$ netlab install ansible
+```
