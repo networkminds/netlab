@@ -19,4 +19,8 @@ $ netlab version
 ```
 <img width="826" height="416" alt="image" src="https://github.com/user-attachments/assets/428e0ed5-80b3-466c-a9dd-7c1a5940ead3" />
 
-
+### 5. Check which additional softwares should we install to netlab:
+```bash
+$ netlab install
+```
+<img width="639" height="203" alt="image" src="https://github.com/user-attachments/assets/5cb8b9bb-765e-46c4-a5a6-65b5da86755b" />
