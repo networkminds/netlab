@@ -1,0 +1,38 @@
+provider: clab
+defaults.device: iol
+defaults.devices.iol.clab.image: vrnetlab/cisco_iol:17.12.01
+
+plugin: [ files ]
+
+nodes:
+  - name: r1
+    module: [ bgp ]
+    id: 1
+    device: iol
+    config.inline: |
+      ip pim rp-address 1.1.1.1
+  
+  - name: r2
+    module: [ bgp ]
+  - name: r3
+    loopback:
+      ipv4: 3.3.3.3/32
+    module: [ bgp ]
+
+bgp:
+  advertise_loopback: false
+  as_list:
+    100:
+      members: [ r1]
+    200:
+      members: [ r2 ]
+    300:
+      members: [ r3 ]
+
+links:
+  - r1-r2
+  - prefix: 172.30.1.0/31
+    r2:
+    r3:
+  - prefix: 100.100.100.0/24
+    r3:
