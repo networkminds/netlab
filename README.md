@@ -16,6 +16,7 @@ $ pip3 install networklab
 ### 4. Check netlab installed version
 ```bash
 $ netlab version
+```
 <img width="826" height="416" alt="image" src="https://github.com/user-attachments/assets/428e0ed5-80b3-466c-a9dd-7c1a5940ead3" />
 
-```
+
