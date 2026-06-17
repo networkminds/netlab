@@ -1,0 +1,11 @@
+provider: clab
+defaults.device: iol
+defaults.devices.iol.clab.image: vrnetlab/cisco_iol:17.12.01
+
+nodes: [r1, r2, r3, r4]
+module: [ospf]
+links:
+  - r1
+  - r1-r2
+  - r2-r3
+  - r3-r4
