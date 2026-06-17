@@ -32,8 +32,10 @@ $ netlab install containerlab
 $ netlab install ansible
 ```
 ### 6. Run "Cisco IOL" image for labs:
+```bash
 How to run cisco IOL image see video "Containerlab": 
-https://www.youtube.com/watch?v=N9bRblKFLNA&t=3907s 
+https://www.youtube.com/watch?v=N9bRblKFLNA&t=3907s
+```
 
 ### 7. Create topology files and run topology
 ```bash
